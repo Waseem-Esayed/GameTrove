@@ -58,6 +58,8 @@ body .container .slider .images-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  transform: translate(-20px, -20px);
+  overflow: visible;
 }
 
 body .container .slider .images-container .small-spaceship {
