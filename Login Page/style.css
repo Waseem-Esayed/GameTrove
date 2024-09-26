@@ -5,6 +5,7 @@
   overflow: hidden;
   font-family: Roboto;
   color: white;
+  touch-action: manipulation;
 }
 
 html, body {
@@ -195,13 +196,14 @@ body .container .content .sign-content .input-fields {
 
 body .container .content .sign-content .input-fields i {
   transform: translate(105px, -26.5px) !important;
-  font-size: 10px;
+  font-size: 13px;
   overflow: visible;
 }
 
 body .container .content .sign-content .input-fields input {
   background: transparent;
   background-color: rgba(255, 255, 255, 0.3);
+  font-size: 13px;
   backdrop-filter: blur(14px);
   border: none;
   outline: none;
