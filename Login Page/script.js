@@ -24,8 +24,8 @@ document.addEventListener('DOMContentLoaded', function () {
   emailInputIcon.style.display = 'none';
 
   signIButtonSwitch.onclick = () => {
-    if (signIButtonSwitch.style.backgroundColor !== 'rgb(31,37,70)') {
-      signIButtonSwitch.style.backgroundColor = 'rgb(31,37,70)';
+    if (window.getComputedStyle(signIButtonSwitch).backgroundColor !== 'rgb(31, 37, 70)') {
+      signIButtonSwitch.style.backgroundColor = 'rgb(31, 37, 70)';
       signUpButtonSwitch.style.backgroundColor = 'rgba(255, 255, 255, 0.3)';
 
       sliderBox.style.borderRadius = '40px 80px 80px 40px';
@@ -41,7 +41,9 @@ document.addEventListener('DOMContentLoaded', function () {
             emailInput.style.display = 'none';
             emailInputIcon.style.display = 'none';
             rememberMeCheckbox.style.display = 'none';
+            rememberMeCheckbox.checked = false;
             forgotPassswordLabel.textContent = 'Forgot Password';
+            forgotPassswordLabel.style.cursor = 'pointer';
             SignInOrUpTitle.textContent = 'Sign In';
             SignInOrUpButton.textContent = 'Sign In';
             SignInOrUpButton.appendChild(arrow);
@@ -58,8 +60,8 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   signUpButtonSwitch.onclick = () => {
-    if (signUpButtonSwitch.style.backgroundColor !== 'rgb(31,37,70)') {
-      signUpButtonSwitch.style.backgroundColor = 'rgb(31,37,70)';
+    if (window.getComputedStyle(signUpButtonSwitch).backgroundColor !== 'rgb(31, 37, 70)') {
+      signUpButtonSwitch.style.backgroundColor = 'rgb(31, 37, 70)';
       signIButtonSwitch.style.backgroundColor = 'rgba(255, 255, 255, 0.3)';
 
       sliderBox.style.borderRadius = '80px 40px 40px 80px';
@@ -75,7 +77,9 @@ document.addEventListener('DOMContentLoaded', function () {
             emailInput.style.display = 'block';
             emailInputIcon.style.display = 'block';
             rememberMeCheckbox.style.display = 'block';
+            rememberMeCheckbox.checked = false;
             forgotPassswordLabel.textContent = 'Remember Me';
+            forgotPassswordLabel.style.cursor = 'default';
             SignInOrUpTitle.textContent = 'Sign Up';
             SignInOrUpButton.textContent = 'Sign Up';
             SignInOrUpButton.appendChild(arrow);
