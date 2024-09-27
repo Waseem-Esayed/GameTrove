@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang='de'>
+
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <link rel='stylesheet' href='style.css'>
+  <title>GameTrove</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sofadi+One&display=swap"
+    rel="stylesheet">
+
+  <script src='https://kit.fontawesome.com/668ebba5a9.js' crossorigin='anonymous'></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="slider">
+      <div class="images-container">
+        <img class="animation-item small-spaceship" id="small-spaceship-one" src="images/small-spaceship.jpg">
+        <img class="animation-item" id="rocket-img" src="images/rocket.png">
+        <img class="animation-item small-spaceship" id="small-spaceship-two" src="images/small-spaceship.jpg">
+      </div>
+      <p id="slider-text">You Are Few Minutes Way To Boost Your <br> Sksills With <span id="page-name">GameTrove</span>
+      </p>
+    </div>
+    <div class="content">
+      <div class="sign-in-up-btns" >
+        <button id="sign-in-btn-switch" onclick="navHome()">
+          Sign In
+        </button>
+        <button id="sign-up-btn-switch">
+          Sign Up
+        </button>
+      </div>
+
+      <p id="sign-in-up-title">Sign In</p>
+
+      <div class="sign-content">
+
+        <div class="input-fields">
+          <input id="email-input" type="email" placeholder="Email">
+          <i class="fa-regular fa-envelope"></i>
+          <input id="username-input" type="text" placeholder="Username">
+          <i class="fa-regular fa-user"></i>
+          <input id="password-input" type="password" placeholder="Password">
+          <i class="fa-solid fa-lock"></i>
+        </div>
+        <div class="help-box">
+          <input id="remember-me-checkbox" type="checkbox">
+          <label id="forgot-password-label" for="remember-me-checkbox">Forgot Password?</label>
+        </div>
+      </div>
+      <button id="sign-in-up-btn" onclick="navHome()">Sign In <i class="fa-solid fa-arrow-right"></i></button>
+      <div class="icon-sign-in-up-container">
+        <button id="google-login-btn"><i class="fa-brands fa-google"></i></button>
+        <button id="twitter-login-btn"><i class="fa-brands fa-twitter"></i></button>
+        <button id="facebook-login-btn"><i class="fa-brands fa-facebook-f"></i></button>
+        <button id="github-login-btn"><i class="fa-brands fa-github"></i></button>
+      </div>
+
+    </div>
+  </div>
+
+  <script src='script.js'></script>
+</body>
+
+</html>
